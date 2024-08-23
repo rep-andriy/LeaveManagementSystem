@@ -1,4 +1,4 @@
-﻿@model LeaveManagementSystem.Web.Data.LeaveType
+﻿@model LeaveTypeCreateVM
 
 @{
     ViewData["Title"] = "Create Leave Type";
@@ -21,6 +21,7 @@
                 <input asp-for="NumberOfDays" class="form-control" />
                 <span asp-validation-for="NumberOfDays" class="text-danger"></span>
             </div>
+            <input type = "hidden" name="Id" value="12"/>
             <br/>
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-success" />
@@ -29,6 +30,7 @@
         </form>
     </div>
 </div>
+
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
