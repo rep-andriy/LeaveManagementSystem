@@ -1,6 +1,6 @@
 ﻿using System.Net.Mail;
 
-namespace LeaveManagementSystem.Web.Services
+namespace LeaveManagementSystem.Web.Services.Email
 {
     public class EmailSender(IConfiguration _configuration) : IEmailSender
     {
