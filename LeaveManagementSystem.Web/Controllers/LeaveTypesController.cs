@@ -21,8 +21,8 @@ namespace LeaveManagementSystem.Web.Controllers
         // GET: LeaveTypes
         public async Task<IActionResult> Index()
         {
-            var viewData1 = await _leaveTypesService.GetAll();
-            return View(viewData1);
+            var viewData = await _leaveTypesService.GetAll();
+            return View(viewData);
 
             /*
             // convert the datamodel into a view model
